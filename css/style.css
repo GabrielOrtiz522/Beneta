@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* Fuentes Utilizadas:
+font-family: 'PT Sans Narrow', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -182,8 +189,6 @@ footer {
   width: 32px; 
   height: 32px;
   border: transparent solid 1px;
-  border-radius: 10px;
-  background:transparent;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -203,6 +208,8 @@ footer {
 .contenedor-socialM:hover {
   background-color: #243f3e;
   border: white solid 1px;
+  border-radius: 10px;
+  background:transparent;
 }
 
 .box-copyright {
@@ -251,93 +258,66 @@ footer {
 }
 
 /* --- Nuestro Catálogo --- */
-.cuerpo-catalogo {
-  border: solid black;
-  border-width: 1px;
-  border-radius: 10px;
-  width: 95%;
-  height: auto;
-  margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
-  -webkit-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
-  -moz-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
-  background-color: rgba(255, 255, 255, 0.856);
+
+.cuerpo-carrito {
+  background-color: rgba(255, 255, 255, 0.795);
+  margin: 2%;
+  box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  -webkit-box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  -moz-box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  border: black solid thin;
 }
 
-.btn {
+.busqueda-carrito {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cuerpo-carrito h1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.cuerpo-carrito hr {
+  width: 60%;
+  margin: auto;
+}
+
+
+.buscar{
+  margin: 1%;
+}
+
+.buscar input {
+  width: 500px;
+  height: 40px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #222;
+  outline: none;
+  border: 1px solid silver;
+  border-radius: 30px;
+}
+
+.btn-carrito {
+  padding: 3px;
   background-color: #f4ead2;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   border: solid black;
+  border-radius: 10px;
   color: black;
   margin: 1%;
 }
 
-.btn:hover {
+.btn-carrito:hover {
   background-color: #2d5150;
   border-color: black;
 }
 
-.imgProductos {
-  width: 150px;
-  height: 200px;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px;
-  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-.card-body {
-  font-family: "Roboto", sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.colorBoton {
-  font-family: "Roboto", sans-serif;
-  border: black solid 1px;
-  border-radius: 5px;
-  padding: 5px;
-}
-
-.colorBoton:hover {
-  background-color: #2d5150;
-  color: aliceblue;
-}
-
-.carrito-compras {
-  font-family: "Roboto", sans-serif;
-  border: solid black;
-  border-width: 1px;
-  border-radius: 10px;
-  padding: 1%;
-  width: 95%;
-  height: auto;
-  margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
-  -webkit-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
-  -moz-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
-  background-color: rgba(255, 255, 255, 0.856);
-}
 
 /* --- Contacto --- */
 .logo-instagram {
