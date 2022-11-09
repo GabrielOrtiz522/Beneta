@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ol {
+  list-style: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  background-image: url(../img/6826.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  /* --- Footer siempre abajo --- */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #2d5150;
+}
+
+.logoNavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8px;
+}
+.logoNavBar img {
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.itemNavBar {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  margin: 10px;
+  padding: 4px;
+  background-color: #f4ead2;
+  border-style: solid;
+  border-color: black;
+  border-radius: 10px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.itemNavBar:hover, .itemNavBar:focus, .itemNavBar:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.carritoCompras {
+  margin-right: 20px;
+  background-color: #f4ead2;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn-wsp {
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 30px;
+  right: 30px;
+  background: #0df053;
+  color: white;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 30px;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+/* ------ Sección del Footer ------ */
+
+footer {
+  width: 100%;
+  padding-top: 10px;
+  padding: 1%;
+  background-color: #2d5150;
+  font-family: "Roboto", sans-serif;
+  /* --- Footer siempre abajo --- */
+  margin-top: auto;
+}
+
+.contenedor-footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+
+.box-footer {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.box-footer .text-footer {
+  max-width: 300px;
+  font-size: 15px;
+}
+
+.box-footer .logo-footer {
+  width: 45px;
+}
+
+.box-footer h2 {
+  font-size: 20px;
+}
+
+.box-footer a{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.link-footer:hover {
+  background-color: #f4ead2;
+  border-radius: 10px;
+  color:#2d5150;
+}
+
+.social-media {
+  display: flex ;
+  gap: 20px;
+}
+
+.contenedor-socialM {
+  width: 32px; 
+  height: 32px;
+  border: transparent solid 1px;
+  border-radius: 10px;
+  background:transparent;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-socialM img {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+}
+
+.contenedor-socialM:hover {
+  background-color: #243f3e;
+  border: white solid 1px;
+}
+
+.box-copyright {
+  color: white;
+  padding: 0.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.hr-footer{
+  color: white;
+  width: 60%;
+  margin: auto;
+  display: flex;
+
+}
+/* ------ Finaliza Sección del Footer ------ */
+
+/* ------ Inicio ------ */
+
+.banner-principal {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-principal {
+  width: 100%;
+  height: 99.5%;
+  top: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(0, 0, 0, 0.295);
+}
+
+/* --- Nuestro Catálogo --- */
+.cuerpo-catalogo {
+  border: solid black;
+  border-width: 1px;
+  border-radius: 10px;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
+  -webkit-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
+  -moz-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+.btn {
+  background-color: #f4ead2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border: solid black;
+  color: black;
+  margin: 1%;
+}
+
+.btn:hover {
+  background-color: #2d5150;
+  border-color: black;
+}
+
+.imgProductos {
+  width: 150px;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  -webkit-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.colorBoton {
+  font-family: "Roboto", sans-serif;
+  border: black solid 1px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.colorBoton:hover {
+  background-color: #2d5150;
+  color: aliceblue;
+}
+
+.carrito-compras {
+  font-family: "Roboto", sans-serif;
+  border: solid black;
+  border-width: 1px;
+  border-radius: 10px;
+  padding: 1%;
+  width: 95%;
+  height: auto;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
+  -webkit-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
+  -moz-box-shadow: 5px 4px 9px 2px rgba(94, 84, 84, 0.88);
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+/* --- Contacto --- */
+.logo-instagram {
+  display: flex;
+  width:auto ;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
