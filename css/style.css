@@ -286,7 +286,6 @@ footer {
   margin: auto;
 }
 
-
 .buscar{
   margin: 1%;
 }
@@ -318,6 +317,58 @@ footer {
   border-color: black;
 }
 
+.catalogoProductos {
+  display: flex;
+  align-items: center;
+  place-content: center;
+  flex-wrap: wrap;
+  margin: 1%;
+  gap: 10px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+}
+
+.card-body {
+  margin: 10px;
+  width: 300px;
+}
+
+.card img {
+  width: 250px;
+  height: 200px;
+  object-fit: contain;
+  margin-top: 1rem;
+}
+
+.card-tittle {
+  font-size: 20px;
+}
+
+.colorBoton {
+  color: black;
+  background-color: #f4ead2;
+  border: black solid thin;
+}
+
+.colorBoton:hover{
+  background-color: #2d5150;
+  color: aliceblue;
+}
+
+.offcanvas-title {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  margin: auto;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #2d5150;
+}
 
 /* --- Contacto --- */
 .logo-instagram {
