@@ -365,9 +365,69 @@ footer {
   font-family: "Roboto", sans-serif;
   font-style: italic;
   margin: auto;
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-decoration-color: #2d5150;
+}
+
+.carritoContenedor {
+  display: flex;
+  flex-direction: column;
+}
+
+.productoEnCarrito {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  border-left: 5px solid #419c49;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+  border-left: 5px solid #39e991;
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: red;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+.boton-eliminar:focus {
+  outline: none;
+}
+
+.btn-vaciar {
+  margin: auto;
+  text-align: center;
+  padding: 2%;
+  background-color: #f4ead2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border: solid black thin;
+  border-radius: 10px;
+  color: black;
+}
+
+.btn-vaciar:hover{
+  background-color: red;
+  box-shadow: 0 0 20px rgb(255, 60, 60);
+  color: white;
+}
+
+.precio-producto {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: #222 solid thin;
+  border-radius: 10px;
+  padding: 2%;
+  background-color: #f4ead2;
 }
 
 /* --- Contacto --- */
