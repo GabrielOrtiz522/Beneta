@@ -1,0 +1,9 @@
+[
+    {"img":"../img/juan-alberto.jpg" , "nombre":"Juan Alberto", "email": "random-email@hotmail.com", "comentario": "Muy ricos sus productos, fui a la degustación de Sidras, una experiencia unica!"},
+
+    {"img": "../img/maria-elena.jpg","nombre": "María Elena Fuseneco", "email":"random-email@hotmail.com", "comentario": "A Dardo y a mi nos encanta visitar el local cuando estamos de paseo por Córdoba, recomendadisimo!" },
+
+    {"img": "../img/pepelepu.jpg","nombre": "Pepé Le Pew", "email": "random-email@hotmail.com", "comentario": "Si no me cancelaran cada 2 semanas viviria en su local, esta muy bien decorado, magnifique!"},
+
+    {"img": "../img/samuel.jpeg", "nombre": "Samuel Tocaimaza", "email": "profe-coderhouse@hotmail.com", "comentario":"Muy lindo lugar a pocos kilometros de Villa General Belgrano con excelentes precios para ir a gastar todos los dolares acumulados"}
+]

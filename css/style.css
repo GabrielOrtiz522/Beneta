@@ -335,7 +335,6 @@ footer {
 }
 
 .card-body {
-  margin: 10px;
   width: 300px;
 }
 
@@ -343,7 +342,7 @@ footer {
   width: 250px;
   height: 200px;
   object-fit: contain;
-  margin-top: 1rem;
+  margin-top: 10px;
 }
 
 .card-tittle {
@@ -420,6 +419,24 @@ footer {
   color: white;
 }
 
+.btn-confirmar {
+  margin: auto;
+  text-align: center;
+  padding: 2%;
+  background-color: #f4ead2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  border: solid black thin;
+  border-radius: 10px;
+  color: black;
+}
+
+.btn-confirmar:hover{
+  background-color: #419c49;
+  box-shadow: 0 0 20px rgb(60, 255, 148);
+  color: white;
+}
+
 .precio-producto {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -430,7 +447,52 @@ footer {
   background-color: #f4ead2;
 }
 
+.eliminar-finalizar {
+  display: flex;
+}
+
 /* --- Contacto --- */
+.cuerpoContacto {
+  background-color: white;
+  border: black solid;
+  border-radius: 10px;
+  margin: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 1%;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  -webkit-box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  -moz-box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  border: black solid thin;
+}
+
+.empresaNombre {
+  margin-bottom: 5px;
+}
+
+.primerNombre {
+  margin-bottom: 5px;
+}
+
+.correoTelefono {
+  margin-bottom: 5px;
+}
+
+.direccion {
+  margin-bottom: 5px;
+}
+
+.enviar {
+  text-align: end;
+  font-size: 20px;
+}
+
 .logo-instagram {
   display: flex;
   width:auto ;
@@ -438,4 +500,50 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 2%;
+}
+
+.cuerpoComentarios {
+  margin: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.contenedor-comentarios {
+  display: flex;
+  justify-content: center;
+}
+
+.cuerpoComentarios h2 {
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: 400;
+}
+
+.cuerpoComentarios hr {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.comentariosReales {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin: 1%;
+  padding: 1%;
+  background-color: white ;
+  box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  -webkit-box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  -moz-box-shadow: 4px 8px 10px 3px rgba(36,63,62,0.74);
+  border: black solid thin;
+  border-radius: 10px;
+}
+
+.comentariosReales:hover {
+  box-shadow: 0 0 20px rgb(9, 75, 55);
+}
+
+.comentariosReales img {
+  border: black solid;
 }

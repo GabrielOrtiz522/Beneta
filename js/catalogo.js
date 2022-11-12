@@ -1,38 +1,11 @@
 // ****** Catálogo de Productos ******
 // ****** Beneta Delimarket ******
 
-// Copy&Paste - JSON
-// {"nombre": ,"cantidad": ,"precio": , "id": , "img": }
-
-/*
-// Trae los productos del JSON al html:
-const catalogo = document.getElementById("catalogo");
-const producto = "../json/stock-productos.json";
-
-fetch(producto)
-    .then(respuesta => respuesta.json())
-    .then(datos => {
-        datos.forEach( producto => {
-            catalogo.innerHTML += `
-            <div class="card">
-                <img src="${producto.img}" class="imgProductos" alt="">
-                 <div class="card-body">
-                    <h5 class="card-tittle"> ${producto.nombre} </h5>
-                    <p class="card-text"> Precio: $${producto.precio} </p>
-                    <button class="btn colorBoton" id="boton ${producto.id}"> Agregar al Carrito </button>
-                </div>
-            </div>
-            `
-        })
-    })
-    .catch(error => console.log(error));
-*/
-
 const contenedorProductos = document.getElementById ("contenedor-productos");
 
 const contenedorCarrito = document.getElementById ("carrito-contenedor")
 
-const botonVaciar = document.getElementById ("vaciar-carrito")
+const botonVaciar = document.getElementById ("vaciarCarrito")
 
 const contadorCarrito = document.getElementById ("contadorCarrito")
 
@@ -56,16 +29,27 @@ stockProductos.forEach ((producto) => {
                  <div class="card-body">
                     <h5 class="card-tittle"> ${producto.nombre} </h5>
                     <p class="card-text"> Precio: $${producto.precio} </p>
-                    <button class="btn colorBoton" id="agregar${producto.id}"> Agregar al Carrito </button>
+                    <button class="btn colorBoton" id="agregarProducto${producto.id}"> Agregar al Carrito </button>
                 </div>
             </div>
             `
             contenedorProductos.appendChild(div); // Muestra el div creado en el HTML
 
-            const boton = document.getElementById(`agregar${producto.id}`) 
+            const boton = document.getElementById(`agregarProducto${producto.id}`) 
             boton.addEventListener("click", () => {
-                agregarAlCarrito(producto.id)
-            }) // Agrega el producto al Array con el boton "Agregar al Carrito"
+                agregarAlCarrito(producto.id) // Agrega el producto al Array con el boton "Agregar al Carrito"
+
+                Toastify({ // Efecto al agregar producto al carrito (Si estaba en efectos.js no me lo tomaba)
+                    text:"Producto agregado al carrito",
+                    duration: 3000,
+                    gravity: "bottom",
+                    position: "right",
+                    style:
+                    {
+                    background: "linear-gradient(to right, #226c6b, #2d5150)",
+                    }
+                }).showToast();
+            }) 
 });
 
 const agregarAlCarrito = (prodId) => {
@@ -122,4 +106,3 @@ const actualizarCarrito = () => {
     precioTotal.innerText = carrito.reduce ((acc, prod) => acc + prod.cantidad * prod.precio, 0) // Por cada producto que recorra el carrito, el acc suma la propiedad precio
 
 }
-

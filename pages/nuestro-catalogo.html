@@ -7,6 +7,8 @@
     <link rel="icon" href="../img/favicon.png">
     <!-- BootsTrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <!-- Animate Animated -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Font Awesome -->
@@ -49,28 +51,29 @@
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
                             <div class="offcanvas-body">
-                                <div id="carrito-contenedor" class="carritoContenedor"> </div> <!-- Contenedor de los productos -->
+                                <!-- Contenedor de los productos -->
+                                <div id="carrito-contenedor" class="carritoContenedor"> </div> 
                                 
                                 <p id="precioProducto" class="precio-producto"> El total de la compra es: $<span id="precioTotal"> 0 </span> </p>
 
-                                <button id="vaciar-carrito" class="btn-vaciar"> Vaciar Carrito </button> <!-- Boton "Vaciar Carrito "-->
-                                
+                                <div class="eliminar-finalizar"> <!-- Seccion de botones Vaciar Carrito / Finalizar Compra -->
+                                    <button id="vaciarCarrito" class="btn-vaciar"> Vaciar Carrito </button> <!-- Boton "Vaciar Carrito "-->
+
+                                    <button id="confirmarCompra" class="btn-confirmar"> Finalizar con la compra </button> <!-- Boton "Finalizar compra"-->
+                                </div>
                             </div>
                     </div> 
                     <!-- Fin - Canvas de BT-->
                 </div>
                 <!-- *** Inicio del Catálogo *** -->
 
-                <div id="contenedor-productos" class="catalogoProductos">
-
-                </div>
+                <div id="contenedor-productos" class="catalogoProductos"> </div>
 
             </div> 
 
         <div> <!-- Inicio - Boton flotante de WhatsApp -->
             <a href="https://api.whatsapp.com/send?phone=3515069516" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp icon" class="btn-wsp"></a>  
         </div> <!-- Fin - Boton flotante de WhatsApp -->
-
     </main>
     <footer> <!-- Inicio - Footer -->
         <div class="contenedor-footer">
@@ -115,10 +118,19 @@
             <a href="https://github.com/GabrielOrtiz522" target="_blank"><img src="../img/github-icon.png" width="35px"></a>
         </div>    
     </footer> <!-- Fin - footer -->
+
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Toastify  -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <!-- Mi JS-->
     <script src="../js/stock-productos.js"></script>
     <script src="../js/catalogo.js"></script>
+    <script src="../js/efectos.js"></script>
 </body>
 </html>
